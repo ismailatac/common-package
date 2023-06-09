@@ -85,15 +85,30 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.micrometer/micrometer-observation -->
         <dependency>
+
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-observation</artifactId>
-            <version>1.11.0</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.zipkin.reporter2/zipkin-reporter -->
         <dependency>
             <groupId>io.zipkin.reporter2</groupId>
-            <artifactId>zipkin-reporter</artifactId>
-            <version>2.16.4</version>
+            <artifactId>zipkin-reporter-brave</artifactId>
+
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.micrometer/micrometer-tracing-bridge-brave -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-tracing-bridge-brave</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>${micrometer.version}</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
